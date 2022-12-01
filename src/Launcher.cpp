@@ -26,7 +26,7 @@ int main(int argc, char** argv) {
         }
 
         // if not in range of available day solutions
-        if(!(dayInput > 0 && dayInput <= days.size())) {
+        if(!(dayInput > 0 && dayInput <= (int)days.size())) {
             continue;
         }
 
