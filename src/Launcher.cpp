@@ -19,22 +19,23 @@ int main(int argc, char** argv) {
     int dayInput;
     int stageInput;
     while(true) {
-        std::cout << "Day [1-"<< days.size() <<", or 0 to test]: ";
+        std::cout << "Day [1-"<< days.size() <<"]: ";
         std::cin >> dayInput;
 
-        if(dayInput == 0) {
-            testing::InitGoogleTest(&argc, argv);
-            return RUN_ALL_TESTS();
-        }
 
         // if not in range of available day solutions
         if(!(dayInput > 0 && dayInput <= (int)days.size())) {
             continue;
         }
 
-        std::cout << "Stage [1 or 2]: ";
+        std::cout << "Stage [1 or 2, 0 to test]: ";
         std::cin >> stageInput;
 
+        if(stageInput == 0) {
+            testing::InitGoogleTest(&argc, argv);
+            ::testing::GTEST_FLAG(filter) = std::format("Day{:02d}*", dayInput);
+            return RUN_ALL_TESTS();
+        }
         // if stage isn't 1 or 2
         if(!(stageInput == 1 || stageInput == 2)) {
             continue;

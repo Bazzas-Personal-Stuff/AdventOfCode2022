@@ -21,19 +21,19 @@
 // }
 
 // TEST(Day, Stage1) {
-//     Day day = DayTemplate();
+//     Day day = Day();
 //     
 //     std::string input(R"()");
-//     std::string expected(R"()");
+//     std::string expected(R"(not implemented)");
 //
 //     ASSERT_EQ(expected, day.Stage1(input));
 // }
 //
 // TEST(Day, Stage2) {
-//     Day day = DayTemplate();
+//     Day day = Day();
 //     
 //     std::string input(R"()");
-//     std::string expected(R"()");
+//     std::string expected(R"(not implemented)");
 //
 //     ASSERT_EQ(expected, day.Stage2(input));
 // }
