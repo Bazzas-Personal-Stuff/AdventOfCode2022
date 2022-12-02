@@ -52,10 +52,10 @@ int main(int argc, char** argv) {
     std::filesystem::path p = std::filesystem::current_path();
     p /= inputsDir;
 
-    std::ifstream t(p);
-    std::stringstream buffer;
-    buffer << t.rdbuf();
-    std::string input = buffer.str();
+    std::ifstream input(p);
+    // std::stringstream buffer;
+    // buffer << t.rdbuf();
+    // std::string input = buffer.str();
 
     // Run the requested stage
     dayInput -= 1; // 1-index to 0-index

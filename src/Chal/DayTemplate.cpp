@@ -2,24 +2,25 @@
 // #include "Day.h"
 // #include "gtest/gtest.h"
 //
-// std::string Day::Stage1(std::string& input) {
+// std::string Day::Stage1(std::istream& input) {
 //     using namespace std;
-//     stringstream ss(input);
 //     stringstream outSS;
 //     
 //     
 //     return outSS.str();
 // }
 //
-// std::string Day::Stage2(std::string& input) {
+// std::string Day::Stage2(std::istream& input) {
 //     using namespace std;
-//     stringstream ss(input);
 //     stringstream outSS;
 //
 //     
 //     return outSS.str();
 // }
 
+
+
+//// ================= gtest for given cases ===================
 // TEST(Day, Stage1) {
 //     Day day = Day();
 //     

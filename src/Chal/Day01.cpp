@@ -2,16 +2,15 @@
 #include "Day01.h"
 #include "gtest/gtest.h"
 
-std::string Day01::Stage1(std::string& input) {
+std::string Day01::Stage1(std::istream& input) {
     using namespace std;
-    stringstream ss(input);
     stringstream outSS;
 
     int maxCal = 0;
     int curCal = 0;
-    while(ss) {
+    while(input) {
         string cal;
-        getline(ss, cal);
+        getline(input, cal);
 
         if(cal.empty()) {
             if(curCal > maxCal) {
@@ -29,16 +28,15 @@ std::string Day01::Stage1(std::string& input) {
     return outSS.str();
 }
 
-std::string Day01::Stage2(std::string& input) {
+std::string Day01::Stage2(std::istream& input) {
     using namespace std;
-    stringstream ss(input);
     stringstream outSS;
 
     int maxCals[3] = {0, 0, 0}; // [0] is smallest
     int curCal = 0;
-    while(ss) {
+    while(input) {
         string cal;
-        getline(ss, cal);
+        getline(input, cal);
 
         if(cal.empty()) {
             // bubble sort
@@ -96,9 +94,10 @@ TEST(Day01Test, Stage1) {
 9000
 
 10000)");
+    std::stringstream inputSS(input);
     std::string expected("24000");
 
-    ASSERT_EQ(expected, day.Stage1(input));
+    ASSERT_EQ(expected, day.Stage1(inputSS));
 }
 
 TEST(Day01Test, Stage2) {
@@ -118,9 +117,10 @@ TEST(Day01Test, Stage2) {
 9000
 
 10000)");
+    std::stringstream inputSS(input);
     std::string expected("45000");
 
-    ASSERT_EQ(expected, day.Stage2(input));
+    ASSERT_EQ(expected, day.Stage2(inputSS));
 }
 
 

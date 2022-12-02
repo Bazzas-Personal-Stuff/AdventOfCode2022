@@ -3,9 +3,8 @@
 #include "gtest/gtest.h"
 
 
-std::string Day02::Stage1(std::string& input) {
+std::string Day02::Stage1(std::istream& input) {
     using namespace std;
-    stringstream ss(input);
     stringstream outSS;
 
     // payoff[opponent][self]
@@ -18,7 +17,7 @@ std::string Day02::Stage1(std::string& input) {
 
     
     int totalScore = 0;
-    for(char opponent, self; ss >> opponent >> self; ) {
+    for(char opponent, self; input >> opponent >> self; ) {
         int opponentIdx = opponent - 'A';
         int selfIdx = self - 'X';
 
@@ -30,9 +29,8 @@ std::string Day02::Stage1(std::string& input) {
     return outSS.str();
 }
 
-std::string Day02::Stage2(std::string& input) {
+std::string Day02::Stage2(std::istream& input) {
     using namespace std;
-    stringstream ss(input);
     stringstream outSS;
 
     // Change payoff table according to new rules
@@ -46,7 +44,7 @@ std::string Day02::Stage2(std::string& input) {
 
     
     int totalScore = 0;
-    for(char opponent, self; ss >> opponent >> self; ) {
+    for(char opponent, self; input >> opponent >> self; ) {
         int opponentIdx = opponent - 'A';
         int selfIdx = self - 'X';
 
@@ -58,15 +56,18 @@ std::string Day02::Stage2(std::string& input) {
     return outSS.str();
 }
 
+
+// ================= gtest for given cases ===================
 TEST(Day02, Stage1) {
     Day02 day = Day02();
     
     std::string input(R"(A Y
 B X
 C Z)");
+    std::stringstream inputSS(input);
     std::string expected(R"(15)");
 
-    ASSERT_EQ(expected, day.Stage1(input));
+    ASSERT_EQ(expected, day.Stage1(inputSS));
 }
 
 TEST(Day02, Stage2) {
@@ -75,9 +76,10 @@ TEST(Day02, Stage2) {
     std::string input(R"(A Y
 B X
 C Z)");
+    std::stringstream inputSS(input);
     std::string expected(R"(12)");
 
-    ASSERT_EQ(expected, day.Stage2(input));
+    ASSERT_EQ(expected, day.Stage2(inputSS));
 }
 
 
