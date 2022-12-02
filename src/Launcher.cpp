@@ -1,12 +1,14 @@
 ﻿#include "pch.h"
 #include "gtest/gtest.h"
 #include "Chal/Day01.h"
+#include "Chal/Day02.h"
 
 std::filesystem::path inputsDir = "inputs";
 
 std::vector<std::unique_ptr<Chal>> days;
 void PopulateDays() {
     days.emplace_back(std::make_unique<Day01>());
+    days.emplace_back(std::make_unique<Day02>());
 }
 
 
