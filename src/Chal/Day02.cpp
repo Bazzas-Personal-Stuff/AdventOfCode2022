@@ -18,10 +18,7 @@ std::string Day02::Stage1(std::string& input) {
 
     
     int totalScore = 0;
-    while(ss.rdbuf()->in_avail() > 2) {
-        char opponent, self;
-        ss >> opponent >> self;
-
+    for(char opponent, self; ss >> opponent >> self; ) {
         int opponentIdx = opponent - 'A';
         int selfIdx = self - 'X';
 
@@ -49,10 +46,7 @@ std::string Day02::Stage2(std::string& input) {
 
     
     int totalScore = 0;
-    while(ss.rdbuf()->in_avail() > 2) {
-        char opponent, self;
-        ss >> opponent >> self;
-
+    for(char opponent, self; ss >> opponent >> self; ) {
         int opponentIdx = opponent - 'A';
         int selfIdx = self - 'X';
 
