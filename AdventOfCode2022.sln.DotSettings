@@ -1,0 +1,144 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=DC382AF7D0007545BD63EC8B3729639C/Entry/=C174439BAAF3C74A9D382A3057876388/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=DC382AF7D0007545BD63EC8B3729639C/Entry/=C174439BAAF3C74A9D382A3057876388/EntryName/@EntryValue">Class</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=DC382AF7D0007545BD63EC8B3729639C/Entry/=C174439BAAF3C74A9D382A3057876388/Position/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Categories/=Imported_00202_002F12_002F2022/@EntryIndexedValue">Imported 2/12/2022</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/CustomProperties/=Extension/@EntryIndexedValue">h</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/CustomProperties/=FileName/@EntryIndexedValue">Day</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/CustomProperties/=ValidateFileName/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Description/@EntryValue">&amp;AdventOfCode Day</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=CLASS/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=CLASS/Expression/@EntryValue">getAlphaNumericFileNameWithoutExtension()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=CLASS/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=HEADER/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=HEADER/Expression/@EntryValue">cppFileheader()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=HEADER/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=HEADER/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=NAME/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=NAME/Expression/@EntryValue">getFileNameWithoutExtension()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=NAME/InitialRange/@EntryValue">-1</s:Int64>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=NAME/InitialSection/@EntryValue">CA087AB91EAE0B41BB50FC8D0B643ACB</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=NAME/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=PCH/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=PCH/Expression/@EntryValue">cppPchIncludeDirective()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=PCH/InitialRange/@EntryValue">-1</s:Int64>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=PCH/InitialSection/@EntryValue">CA087AB91EAE0B41BB50FC8D0B643ACB</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Field/=PCH/Order/@EntryValue">3</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Scope/=CD5B1AEA8099834C8F10F84286AA88CA/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Scope/=CD5B1AEA8099834C8F10F84286AA88CA/Type/@EntryValue">InCppProjectFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Section/=CA087AB91EAE0B41BB50FC8D0B643ACB/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Section/=CA087AB91EAE0B41BB50FC8D0B643ACB/LocationSelectorConfig/@EntryValue">&lt;RelativeConfig File="$NAME$.cpp" /&gt;</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Section/=CA087AB91EAE0B41BB50FC8D0B643ACB/LocationSelectorName/@EntryValue">manual</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Section/=CA087AB91EAE0B41BB50FC8D0B643ACB/Order/@EntryValue">0</s:Int64>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Section/=CA087AB91EAE0B41BB50FC8D0B643ACB/SectionPlain/Text/@EntryValue">$PCH$#include "$NAME$.h"&#xD;
+#include "gtest/gtest.h"&#xD;
+&#xD;
+std::string $CLASS$::Stage1(std::istream&amp; input) {&#xD;
+	using namespace std;&#xD;
+	stringstream outSS;&#xD;
+&#xD;
+	outSS &lt;&lt; "Stage1 not implemented";&#xD;
+&#xD;
+	return outSS.str();&#xD;
+}&#xD;
+&#xD;
+std::string $CLASS$::Stage2(std::istream&amp; input) {&#xD;
+	using namespace std;&#xD;
+	stringstream outSS;&#xD;
+&#xD;
+	outSS &lt;&lt; "Stage2 not implemented";&#xD;
+&#xD;
+	return outSS.str();&#xD;
+}&#xD;
+&#xD;
+&#xD;
+// =============== gtests for given cases ===============&#xD;
+&#xD;
+TEST($CLASS$, Stage1){&#xD;
+	$CLASS$ day = $CLASS$();&#xD;
+	std::string input(R"()");&#xD;
+&#xD;
+	std::stringstream inputSS(input);&#xD;
+	std::string expected("Test not implemented");&#xD;
+&#xD;
+	ASSERT_EQ(expected, day.Stage1(inputSS));&#xD;
+}&#xD;
+&#xD;
+TEST($CLASS$, Stage2){&#xD;
+	$CLASS$ day = $CLASS$();&#xD;
+	std::string input(R"()");&#xD;
+&#xD;
+	std::stringstream inputSS(input);&#xD;
+	std::string expected("Test not implemented");&#xD;
+&#xD;
+	ASSERT_EQ(expected, day.Stage2(inputSS));&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Text/@EntryValue">$HEADER$#pragma once&#xD;
+#include "Chal.h"&#xD;
+#include &lt;string&gt;&#xD;
+&#xD;
+class $CLASS$ : public Chal{&#xD;
+public:&#xD;
+    virtual std::string Stage1(std::istream&amp; input) override;&#xD;
+    virtual std::string Stage2(std::istream&amp; input) override;&#xD;
+	$END$&#xD;
+};&#xD;
+</s:String>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</wpf:ResourceDictionary>

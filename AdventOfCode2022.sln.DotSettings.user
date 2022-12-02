@@ -1,0 +1,53 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C174439BAAF3C74A9D382A3057876388/Image/@EntryValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C174439BAAF3C74A9D382A3057876388/Section/=2718C0D6B1C18E458C9377B4AEB227C8/SectionPlain/Text/@EntryValue">$PCH$#include "$NAME$.h"&#xD;
+#include "gtest/gtest.h"&#xD;
+&#xD;
+std::string $CLASS$::Stage1(std::istream&amp; input){&#xD;
+	using namespace std;&#xD;
+	stringstream outSS;&#xD;
+&#xD;
+	outSS &lt;&lt; "Stage 1 not implemented";&#xD;
+	return outSS.str();&#xD;
+}&#xD;
+&#xD;
+std::string $CLASS$::Stage2(std::istream&amp; input){&#xD;
+	using namespace std;&#xD;
+	stringstream outSS;&#xD;
+&#xD;
+	outSS &lt;&lt; "Stage 2 not implemented";&#xD;
+	return outSS.str();&#xD;
+}&#xD;
+&#xD;
+&#xD;
+// ============ gtest for given cases ==============&#xD;
+&#xD;
+TEST($CLASS$, Stage1){&#xD;
+	$CLASS$ day = $CLASS$();&#xD;
+&#xD;
+	std::string input(R"()");&#xD;
+&#xD;
+	std::stringstream inputSS(input);&#xD;
+	std::string expected(R"(test not implemented)");&#xD;
+&#xD;
+	ASSERT_EQ(expected, day.Stage1(inputSS));&#xD;
+}&#xD;
+&#xD;
+TEST($CLASS$, Stage2){&#xD;
+	$CLASS$ day = $CLASS$();&#xD;
+&#xD;
+	std::string input(R"()");&#xD;
+&#xD;
+	std::stringstream inputSS(input);&#xD;
+	std::string expected(R"(test not implemented)");&#xD;
+&#xD;
+	ASSERT_EQ(expected, day.Stage2(inputSS));&#xD;
+}</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C174439BAAF3C74A9D382A3057876388/Text/@EntryValue">$HEADER$#pragma once
+#include "Chal.h"
+// Test
+class $CLASS$ : public Chal {
+    public:
+    virtual std::string Stage1(std::istream&amp; input) override;
+    virtual std::string Stage2(std::istream&amp; input) override;
+    $END$};</s:String></wpf:ResourceDictionary>
