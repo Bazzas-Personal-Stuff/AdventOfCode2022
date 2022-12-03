@@ -6,7 +6,7 @@ std::string Day03::Stage1(std::istream &input) {
     using namespace std;
     stringstream outSS;
 
-    unsigned long sum = 0;
+    int sum = 0;
     for(string line; input >> line; ) {
         // Split line in half
         int halfLength = line.size() / 2;
@@ -24,7 +24,6 @@ std::string Day03::Stage1(std::istream &input) {
                 priority = priority - 'A' + 27;
             }
 
-            cout << priority << endl;
             priorityExistLHS[priority] = true;
         }
         
@@ -64,7 +63,56 @@ std::string Day03::Stage2(std::istream &input) {
     using namespace std;
     stringstream outSS;
 
-    outSS << "Stage2 not implemented";
+    int sum = 0;
+    for(string inA, inB, inC; input >> inA >> inB >> inC;) {
+        
+        vector<bool> priorityExistA(53, false); // index 0 is unused
+        vector<bool> priorityExistB(53, false); // index 0 is unused
+        vector<bool> priorityExistC(53, false); // index 0 is unused
+        for(char c : inA) {
+            int priority = (int)c;
+            if(priority > 'Z') {
+                priority = priority - 'a' + 1;
+            }
+            else {
+                priority = priority - 'A' + 27;
+            }
+            priorityExistA[priority] = true;
+        }
+        
+        for(char c : inB) {
+            int priority = (int)c;
+            if(priority > 'Z') {
+                priority = priority - 'a' + 1;
+            }
+            else {
+                priority = priority - 'A' + 27;
+            }
+            priorityExistB[priority] = true;
+        }
+
+        for(char c : inC) {
+            int priority = (int)c;
+            if(priority > 'Z') {
+                priority = priority - 'a' + 1;
+            }
+            else {
+                priority = priority - 'A' + 27;
+            }
+            priorityExistC[priority] = true;
+        }
+
+        for(int i = 0; i < priorityExistA.size(); i++) {
+            if( priorityExistA[i] &&
+                priorityExistB[i] &&
+                priorityExistC[i]) {
+                sum += i;
+                break;
+            }
+        }
+    }
+    
+    outSS << sum;
 
     return outSS.str();
 }
@@ -97,7 +145,7 @@ ttgJtRGJQctTZtZT
 CrZsJsPPZsGzwwsLwLmpwMDw)");
 
     std::stringstream inputSS(input);
-    std::string expected("Test not implemented");
+    std::string expected("70");
 
     ASSERT_EQ(expected, day.Stage2(inputSS));
 }
