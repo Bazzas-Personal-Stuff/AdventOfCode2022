@@ -3,6 +3,7 @@
 #include "Chal/Day01.h"
 #include "Chal/Day02.h"
 #include "Chal/Day03.h"
+#include "Chal/Day04.h"
 
 std::filesystem::path inputsDir = "inputs";
 
@@ -11,6 +12,7 @@ void PopulateDays() {
     days.emplace_back(std::make_unique<Day01>());
     days.emplace_back(std::make_unique<Day02>());
     days.emplace_back(std::make_unique<Day03>());
+    days.emplace_back(std::make_unique<Day04>());
 }
 
 
