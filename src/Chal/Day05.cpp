@@ -2,15 +2,15 @@
 #include "Day05.h"
 #include "gtest/gtest.h"
 
-std::shared_ptr<std::vector<std::deque<char>>> Day05::ParseCargo(std::istream& input) {
+std::vector<std::deque<char>> Day05::ParseCargo(std::istream& input) {
     using namespace std;
     // Get number of columns
     string tempStr;
     getline(input, tempStr);
     input.seekg(0, ios::beg);
-    int columnCount = (tempStr.size() + 1) / 4;
+    size_t columnCount = (tempStr.size() + 1) / 4;
 
-    auto columns = make_shared<vector<deque<char>>>(columnCount + 1); // index 0 is unused
+    auto columns = vector<deque<char>>(columnCount + 1); // index 0 is unused
     
     // Parse cargo drawing
     for(std::string rowStr; getline(input, rowStr);) {
@@ -19,11 +19,11 @@ std::shared_ptr<std::vector<std::deque<char>>> Day05::ParseCargo(std::istream& i
             break;
         }
 
-        for(int i = 0; i < columns->size() - 1; i++) {
+        for(int i = 0; i < columns.size() - 1; i++) {
             // Offset is 1, stride is 4
             char boxVal = rowStr[1 + (i * 4)];
             if(boxVal != ' ') {
-                columns->at(i + 1).push_front(boxVal);
+                columns[i + 1].push_front(boxVal);
             }
         }
     }
@@ -42,15 +42,15 @@ std::string Day05::Stage1(std::istream& input) {
     int n, source, dest;
     while(input >> discard >> n >> discard >> source >> discard >> dest) {
         for(int i = 0; i < n; i++) {
-            char box = columns->at(source).back();
-            columns->at(source).pop_back();
-            columns->at(dest).push_back(box);
+            char box = columns[source].back();
+            columns[source].pop_back();
+            columns[dest].push_back(box);
         }
     }
 
     // Print result
-    for(int i = 1; i < columns->size(); i++) {
-        outSS << columns->at(i).back();
+    for(int i = 1; i < columns.size(); i++) {
+        outSS << columns[i].back();
     }
 
     return outSS.str();
@@ -68,19 +68,19 @@ std::string Day05::Stage2(std::istream& input) {
     while(input >> discard >> n >> discard >> source >> discard >> dest) {
         stack<char> tempStack = stack<char>(); // Intermediate stack for moving multiple boxes at once
         for(int i = 0; i < n; i++) {
-            char box = columns->at(source).back();
-            columns->at(source).pop_back();
+            char box = columns[source].back();
+            columns[source].pop_back();
             tempStack.push(box);
         }
         for(int i = 0; i < n; i++) {
-            columns->at(dest).push_back(tempStack.top());
+            columns[dest].push_back(tempStack.top());
             tempStack.pop();
         }
     }
 
     // Print result
-    for(int i = 1; i < columns->size(); i++) {
-        outSS << columns->at(i).back();
+    for(int i = 1; i < columns.size(); i++) {
+        outSS << columns[i].back();
     }
 
     return outSS.str();
