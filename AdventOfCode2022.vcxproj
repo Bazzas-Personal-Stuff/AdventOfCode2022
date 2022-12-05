@@ -112,6 +112,7 @@
     </ClCompile>
     <ClCompile Include="src\Chal\Day03.cpp" />
     <ClCompile Include="src\Chal\Day04.cpp" />
+    <ClCompile Include="src\Chal\Day05.cpp" />
     <ClCompile Include="src\Launcher.cpp" />
     <ClCompile Include="src\pch.cpp" />
   </ItemGroup>
@@ -121,6 +122,7 @@
     <ClInclude Include="src\Chal\Day02.h" />
     <ClInclude Include="src\Chal\Day03.h" />
     <ClInclude Include="src\Chal\Day04.h" />
+    <ClInclude Include="src\Chal\Day05.h" />
     <ClInclude Include="src\pch.h" />
   </ItemGroup>
   <ItemDefinitionGroup />
