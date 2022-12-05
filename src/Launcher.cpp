@@ -7,6 +7,8 @@
 #include "Chal/Day05.h"
 
 const std::filesystem::path inputsDir = "inputs";
+constexpr int YEAR = 2022;
+constexpr bool AUTO_DOWNLOAD_INPUTS = true;
 
 std::vector<std::unique_ptr<Chal>> days;
 void PopulateDays() {
@@ -16,7 +18,6 @@ void PopulateDays() {
     days.emplace_back(std::make_unique<Day04>());
     days.emplace_back(std::make_unique<Day05>());
 }
-
 
 
 int main(int argc, char** argv) {
@@ -60,11 +61,18 @@ int main(int argc, char** argv) {
         std::string fileName = std::format("input{:02d}.txt", dayInput);
         std::filesystem::path p = std::filesystem::current_path();
         p /= inputsDir / fileName;
-
+        
+        // Automatically download input if we don't have it already. Requires "aocd" to be set up with a session token.
+        if(!exists(p)) {
+            if(!AUTO_DOWNLOAD_INPUTS) {
+                std::cout << "Input is missing and AUTO_DOWNLOAD_INPUTS is not enabled." << std::endl;
+                continue;
+            }
+            
+            // std::cout << absolute(p) << std::endl;
+            system(std::format("aocd {0} > \"{1}\" {2}", dayInput, absolute(p).string(), YEAR).c_str());
+        }
         std::ifstream input(p);
-        // std::stringstream buffer;
-        // buffer << t.rdbuf();
-        // std::string input = buffer.str();
 
         // Run the requested stage
         dayInput -= 1; // 1-index to 0-index
