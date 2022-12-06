@@ -79,48 +79,20 @@ std::string Day01::Stage2(std::istream& input) {
 
 TEST(Day01Test, Stage1) {
     Day01 day = Day01();
-    
-    std::string input(R"(1000
-2000
-3000
+    std::stringstream input = day.GetGivenInput();
 
-4000
-
-5000
-6000
-
-7000
-8000
-9000
-
-10000)");
-    std::stringstream inputSS(input);
     std::string expected("24000");
 
-    ASSERT_EQ(expected, day.Stage1(inputSS));
+    ASSERT_EQ(expected, day.Stage1(input));
 }
 
 TEST(Day01Test, Stage2) {
     Day01 day = Day01();
-    
-    std::string input(R"(1000
-2000
-3000
+    std::stringstream input = day.GetGivenInput();
 
-4000
-
-5000
-6000
-
-7000
-8000
-9000
-
-10000)");
-    std::stringstream inputSS(input);
     std::string expected("45000");
 
-    ASSERT_EQ(expected, day.Stage2(inputSS));
+    ASSERT_EQ(expected, day.Stage2(input));
 }
 
 

@@ -90,30 +90,18 @@ std::string Day03::Stage2(std::istream &input) {
 
 TEST(Day03, Stage1) {
     Day03 day = Day03();
-    std::string input(R"(vJrwpWtwJgWrhcsFMMfFFhFp
-jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
-PmmdzqPrVvPwwTWBwg
-wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
-ttgJtRGJQctTZtZT
-CrZsJsPPZsGzwwsLwLmpwMDw)");
 
-    std::stringstream inputSS(input);
+    std::stringstream input = day.GetGivenInput();
     std::string expected("157");
 
-    ASSERT_EQ(expected, day.Stage1(inputSS));
+    ASSERT_EQ(expected, day.Stage1(input));
 }
 
 TEST(Day03, Stage2) {
     Day03 day = Day03();
-    std::string input(R"(vJrwpWtwJgWrhcsFMMfFFhFp
-jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
-PmmdzqPrVvPwwTWBwg
-wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
-ttgJtRGJQctTZtZT
-CrZsJsPPZsGzwwsLwLmpwMDw)");
-
-    std::stringstream inputSS(input);
+    
+    std::stringstream input = day.GetGivenInput();
     std::string expected("70");
 
-    ASSERT_EQ(expected, day.Stage2(inputSS));
+    ASSERT_EQ(expected, day.Stage2(input));
 }

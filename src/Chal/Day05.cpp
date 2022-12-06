@@ -91,36 +91,18 @@ std::string Day05::Stage2(std::istream& input) {
 
 TEST(Day05, Stage1) {
     Day05 day = Day05();
-    std::string input(R"(    [D]    
-[N] [C]    
-[Z] [M] [P]
- 1   2   3 
 
-move 1 from 2 to 1
-move 3 from 1 to 3
-move 2 from 2 to 1
-move 1 from 1 to 2)");
-
-    std::stringstream inputSS(input);
+    std::stringstream input = day.GetGivenInput();
     std::string expected("CMZ");
 
-    ASSERT_EQ(expected, day.Stage1(inputSS));
+    ASSERT_EQ(expected, day.Stage1(input));
 }
 
 TEST(Day05, Stage2) {
     Day05 day = Day05();
-    std::string input(R"(    [D]    
-[N] [C]    
-[Z] [M] [P]
- 1   2   3 
-
-move 1 from 2 to 1
-move 3 from 1 to 3
-move 2 from 2 to 1
-move 1 from 1 to 2)");
     
-    std::stringstream inputSS(input);
+    std::stringstream input = day.GetGivenInput();
     std::string expected("MCD");
 
-    ASSERT_EQ(expected, day.Stage2(inputSS));
+    ASSERT_EQ(expected, day.Stage2(input));
 }

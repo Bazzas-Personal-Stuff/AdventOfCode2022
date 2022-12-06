@@ -64,30 +64,18 @@ std::string Day04::Stage2(std::istream& input) {
 
 TEST(Day04, Stage1) {
     Day04 day = Day04();
-    std::string input(R"(2-4,6-8
-2-3,4-5
-5-7,7-9
-2-8,3-7
-6-6,4-6
-2-6,4-8)");
 
-    std::stringstream inputSS(input);
+    std::stringstream input = day.GetGivenInput();
     std::string expected("2");
 
-    ASSERT_EQ(expected, day.Stage1(inputSS));
+    ASSERT_EQ(expected, day.Stage1(input));
 }
 
 TEST(Day04, Stage2) {
     Day04 day = Day04();
-    std::string input(R"(2-4,6-8
-2-3,4-5
-5-7,7-9
-2-8,3-7
-6-6,4-6
-2-6,4-8)");
 
-    std::stringstream inputSS(input);
+    std::stringstream input = day.GetGivenInput();
     std::string expected("4");
 
-    ASSERT_EQ(expected, day.Stage2(inputSS));
+    ASSERT_EQ(expected, day.Stage2(input));
 }

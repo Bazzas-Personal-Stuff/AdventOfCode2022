@@ -59,22 +59,20 @@ std::string $CLASS$::Stage2(std::istream&amp; input) {&#xD;
 &#xD;
 TEST($CLASS$, Stage1){&#xD;
 	$CLASS$ day = $CLASS$();&#xD;
-	std::string input(R"()");&#xD;
 &#xD;
-	std::stringstream inputSS(input);&#xD;
+	std::stringstream input = day.GetGivenInput();&#xD;
 	std::string expected("Test not implemented");&#xD;
 &#xD;
-	ASSERT_EQ(expected, day.Stage1(inputSS));&#xD;
+	ASSERT_EQ(expected, day.Stage1(input));&#xD;
 }&#xD;
 &#xD;
 TEST($CLASS$, Stage2){&#xD;
 	$CLASS$ day = $CLASS$();&#xD;
-	std::string input(R"()");&#xD;
-&#xD;
-	std::stringstream inputSS(input);&#xD;
+	&#xD;
+	std::stringstream input = day.GetGivenInput();&#xD;
 	std::string expected("Test not implemented");&#xD;
 &#xD;
-	ASSERT_EQ(expected, day.Stage2(inputSS));&#xD;
+	ASSERT_EQ(expected, day.Stage2(input));&#xD;
 }</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=366A58442A18284699335607C8A9A3D5/Text/@EntryValue">$HEADER$#pragma once&#xD;
@@ -85,6 +83,9 @@ class $CLASS$ : public Chal{&#xD;
 public:&#xD;
     virtual std::string Stage1(std::istream&amp; input) override;&#xD;
     virtual std::string Stage2(std::istream&amp; input) override;&#xD;
+	virtual std::stringstream GetGivenInput() override {&#xD;
+		return std::stringstream(R"()");&#xD;
+	}&#xD;
 	$END$&#xD;
 };&#xD;
 </s:String>

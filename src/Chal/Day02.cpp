@@ -60,26 +60,20 @@ std::string Day02::Stage2(std::istream& input) {
 // ================= gtest for given cases ===================
 TEST(Day02, Stage1) {
     Day02 day = Day02();
-    
-    std::string input(R"(A Y
-B X
-C Z)");
-    std::stringstream inputSS(input);
+
+    std::stringstream input = day.GetGivenInput();
     std::string expected(R"(15)");
 
-    ASSERT_EQ(expected, day.Stage1(inputSS));
+    ASSERT_EQ(expected, day.Stage1(input));
 }
 
 TEST(Day02, Stage2) {
     Day02 day = Day02();
-    
-    std::string input(R"(A Y
-B X
-C Z)");
-    std::stringstream inputSS(input);
+
+    std::stringstream input = day.GetGivenInput();
     std::string expected(R"(12)");
 
-    ASSERT_EQ(expected, day.Stage2(inputSS));
+    ASSERT_EQ(expected, day.Stage2(input));
 }
 
 
