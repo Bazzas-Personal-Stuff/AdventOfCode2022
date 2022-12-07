@@ -6,10 +6,11 @@
 #include "Chal/Day04.h"
 #include "Chal/Day05.h"
 #include "Chal/Day06.h"
+#include "Chal/Day07.h"
 
 const std::filesystem::path inputsDir = "inputs";
 constexpr int YEAR = 2022;
-constexpr bool AUTO_DOWNLOAD_INPUTS = true;
+constexpr bool AUTO_DOWNLOAD_INPUTS = true; // TODO: make a preprocessor define or something
 
 std::vector<std::unique_ptr<Chal>> days;
 void PopulateDays() {
@@ -19,6 +20,7 @@ void PopulateDays() {
     days.emplace_back(std::make_unique<Day04>());
     days.emplace_back(std::make_unique<Day05>());
     days.emplace_back(std::make_unique<Day06>());
+    days.emplace_back(std::make_unique<Day07>());
 }
 
 
