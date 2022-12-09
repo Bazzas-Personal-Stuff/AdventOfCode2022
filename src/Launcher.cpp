@@ -8,6 +8,7 @@
 #include "Chal/Day06.h"
 #include "Chal/Day07.h"
 #include "Chal/Day08.h"
+#include "Chal/Day09.h"
 
 const std::filesystem::path inputsDir = "inputs";
 constexpr int YEAR = 2022;
@@ -23,6 +24,7 @@ void PopulateDays() {
     days.emplace_back(std::make_unique<Day06>());
     days.emplace_back(std::make_unique<Day07>());
     days.emplace_back(std::make_unique<Day08>());
+    days.emplace_back(std::make_unique<Day09>());
 }
 
 
