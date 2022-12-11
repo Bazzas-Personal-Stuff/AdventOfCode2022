@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Chal">
+      <UniqueIdentifier>{3D94837C-29CB-840D-D2B7-6A10BECD000F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Chal\Chal.h">
+      <Filter>Chal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chal\Day01.h">
+      <Filter>Chal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chal\Day02.h">
+      <Filter>Chal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chal\Day03.h">
+      <Filter>Chal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chal\Day04.h">
+      <Filter>Chal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chal\Day05.h">
+      <Filter>Chal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chal\Day06.h">
+      <Filter>Chal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chal\Day07.h">
+      <Filter>Chal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chal\Day08.h">
+      <Filter>Chal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chal\Day09.h">
+      <Filter>Chal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chal\Day10.h">
+      <Filter>Chal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chal\Day11.h">
+      <Filter>Chal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Chal\Day01.cpp">
+      <Filter>Chal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chal\Day02.cpp">
+      <Filter>Chal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chal\Day03.cpp">
+      <Filter>Chal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chal\Day04.cpp">
+      <Filter>Chal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chal\Day05.cpp">
+      <Filter>Chal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chal\Day06.cpp">
+      <Filter>Chal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chal\Day07.cpp">
+      <Filter>Chal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chal\Day08.cpp">
+      <Filter>Chal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chal\Day09.cpp">
+      <Filter>Chal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chal\Day10.cpp">
+      <Filter>Chal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chal\Day11.cpp">
+      <Filter>Chal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Launcher.cpp" />
+    <ClCompile Include="src\pch.cpp" />
+  </ItemGroup>
+</Project>
