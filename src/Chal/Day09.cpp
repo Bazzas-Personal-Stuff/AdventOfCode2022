@@ -1,6 +1,7 @@
 ﻿#include "pch.h"
 #include "Day09.h"
 #include "gtest/gtest.h"
+#include "UtilHash.h"
 
 int Day09::SimulateRope(std::istream& input, int ropeLength) {
     using namespace std;

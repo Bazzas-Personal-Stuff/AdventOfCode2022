@@ -58,7 +58,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>vendor\gtest\googletest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src\Util;vendor\gtest\googletest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -80,7 +80,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>vendor\gtest\googletest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src\Util;vendor\gtest\googletest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <LanguageStandard>stdcpp20</LanguageStandard>
@@ -102,6 +102,8 @@
     <ClInclude Include="src\Chal\Day09.h" />
     <ClInclude Include="src\Chal\Day10.h" />
     <ClInclude Include="src\Chal\Day11.h" />
+    <ClInclude Include="src\Chal\Day12.h" />
+    <ClInclude Include="src\Util\UtilHash.h" />
     <ClInclude Include="src\pch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +118,7 @@
     <ClCompile Include="src\Chal\Day09.cpp" />
     <ClCompile Include="src\Chal\Day10.cpp" />
     <ClCompile Include="src\Chal\Day11.cpp" />
+    <ClCompile Include="src\Chal\Day12.cpp" />
     <ClCompile Include="src\Launcher.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>

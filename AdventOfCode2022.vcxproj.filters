@@ -4,6 +4,9 @@
     <Filter Include="Chal">
       <UniqueIdentifier>{3D94837C-29CB-840D-D2B7-6A10BECD000F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{23A78D7C-0FDE-8E0D-B8CA-7410A4E00A0F}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Chal\Chal.h">
@@ -42,6 +45,12 @@
     <ClInclude Include="src\Chal\Day11.h">
       <Filter>Chal</Filter>
     </ClInclude>
+    <ClInclude Include="src\Chal\Day12.h">
+      <Filter>Chal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Util\UtilHash.h">
+      <Filter>Util</Filter>
+    </ClInclude>
     <ClInclude Include="src\pch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +85,9 @@
       <Filter>Chal</Filter>
     </ClCompile>
     <ClCompile Include="src\Chal\Day11.cpp">
+      <Filter>Chal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chal\Day12.cpp">
       <Filter>Chal</Filter>
     </ClCompile>
     <ClCompile Include="src\Launcher.cpp" />

@@ -4,12 +4,6 @@
 
 class Day09 : public Chal {    
 public:
-    struct pair_hash {
-        size_t operator() (const std::pair<int, int>& p) const {
-            return std::rotl(std::hash<int>{}(p.first),1) ^
-                   std::hash<int>{}(p.second);
-        }
-    };
 
     int SimulateRope(std::istream& input, int ropeLength);
     virtual std::string Stage1(std::istream& input) override;

@@ -28,6 +28,7 @@ project "AdventOfCode2022"
     pchsource "src/pch.cpp"
 
     includedirs {
+        "src/Util",
         "vendor/gtest/googletest/include",
         --"vendor/gtest/googletest",
     }
