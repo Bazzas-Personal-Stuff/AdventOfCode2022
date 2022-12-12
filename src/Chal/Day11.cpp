@@ -36,9 +36,9 @@ Day11::Operation::Operation(const std::string& lhs, const std::string& rhs, cons
     }
 }
 
-long Day11::Operation::Eval(long oldVal) const {
-    long lhs = m_LhsOperand->Eval(oldVal);
-    long rhs = m_RhsOperand->Eval(oldVal);
+int64_t Day11::Operation::Eval(int64_t oldVal) const {
+    int64_t lhs = m_LhsOperand->Eval(oldVal);
+    int64_t rhs = m_RhsOperand->Eval(oldVal);
 
     switch(m_Op) {
     case Add: return lhs + rhs;
@@ -83,7 +83,7 @@ std::vector<Day11::Monkey> Day11::ParseMonkeys(std::istream& input) {
     return monkeys;
 }
 
-void Day11::EvalMonkeys(std::vector<Day11::Monkey>& monkeys, int iterCount, int divide, long testProduct) {
+void Day11::EvalMonkeys(std::vector<Day11::Monkey>& monkeys, int iterCount, int divide, int64_t testProduct) {
     for(int round = 0; round < iterCount; round++) {
         for(int monkeyIdx = 0; monkeyIdx < monkeys.size(); monkeyIdx++) {
             Monkey& monkey = monkeys[monkeyIdx];
@@ -92,7 +92,7 @@ void Day11::EvalMonkeys(std::vector<Day11::Monkey>& monkeys, int iterCount, int 
             for(int i = monkey.items.size() - 1; i >= 0; i--) {
                 monkey.inspectCount++;
                 // Inspect item
-                long worryLevel = monkey.items[i];
+                int64_t worryLevel = monkey.items[i];
                 monkey.items[i] = (monkey.operation->Eval(worryLevel) / divide) % testProduct;
                 // if(monkey.items[i] > testProduct || monkey.items[i] < 0) {
                 //     int item = monkey.items[i];
@@ -116,7 +116,7 @@ std::string Day11::Stage1(std::istream& input) {
     stringstream outSS;
     
     vector<Monkey> monkeys = ParseMonkeys(input);
-    long testProduct = 1;
+    int64_t testProduct = 1;
     for(Monkey& monkey : monkeys) {
         testProduct *= monkey.testVal;
     }
@@ -133,7 +133,7 @@ std::string Day11::Stage2(std::istream& input) {
     stringstream outSS;
     
     vector<Monkey> monkeys = ParseMonkeys(input);
-    long testProduct = 1;
+    int64_t testProduct = 1;
     for(Monkey& monkey : monkeys) {
         testProduct *= monkey.testVal;
     }
