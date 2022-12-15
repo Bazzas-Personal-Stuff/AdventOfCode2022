@@ -103,6 +103,8 @@
     <ClInclude Include="src\Chal\Day10.h" />
     <ClInclude Include="src\Chal\Day11.h" />
     <ClInclude Include="src\Chal\Day12.h" />
+    <ClInclude Include="src\Chal\Day13.h" />
+    <ClInclude Include="src\Chal\Day14.h" />
     <ClInclude Include="src\Util\UtilHash.h" />
     <ClInclude Include="src\pch.h" />
   </ItemGroup>
@@ -119,6 +121,8 @@
     <ClCompile Include="src\Chal\Day10.cpp" />
     <ClCompile Include="src\Chal\Day11.cpp" />
     <ClCompile Include="src\Chal\Day12.cpp" />
+    <ClCompile Include="src\Chal\Day13.cpp" />
+    <ClCompile Include="src\Chal\Day14.cpp" />
     <ClCompile Include="src\Launcher.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
